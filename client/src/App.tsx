@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+// @ts-ignore
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 
 function App() {
-  const [data, setData] = React.useState(null);
+  const [data, setData] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
       .then((data) => setData(data.message));
