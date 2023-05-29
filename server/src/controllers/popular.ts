@@ -1,11 +1,11 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express';
 
 function get(req: Request, res: Response): Response {
-    return res.json({ message: 'popular' });
+  return res.json({ message: 'popular' });
 }
 
 const PopularControllers = {
-    get
+  get,
 };
 
 export default PopularControllers;
