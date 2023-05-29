@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+require('dotenv').config();
 import express from 'express';
 import path from 'path';
 import PopularRoutes from './routers/popular';

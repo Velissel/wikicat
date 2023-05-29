@@ -15,4 +15,5 @@ module.exports = {
     '!src/**/*.d.ts',
     '!src/**/*.d.mts',
   ],
+  setupFiles: ['./setup-jest.js'],
 };
