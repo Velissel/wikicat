@@ -11,11 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^1.4.0",
-    "express": "^4.17.2"
-  },
   "engines": {
-    "node": "v17.4.0"
+    "node": "v16.15.1"
   }
 }
