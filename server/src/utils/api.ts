@@ -1,6 +1,6 @@
-import axios from 'axios';
+import { create } from 'axios';
 
-const api = axios({
+const api = create({
   baseURL: process.env.CAT_API,
   headers: {
     'x-api-key': process.env.CAT_API_KEY,
