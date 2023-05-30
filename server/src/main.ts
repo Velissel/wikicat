@@ -8,6 +8,7 @@ import ResponseMiddleware, {
 } from './common/response.middleware';
 import ErrorMiddleware from './common/error.middleware';
 import SearchRoutes from './modules/search/routes';
+import BreedRoutes from './modules/breed/routes';
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -22,6 +23,7 @@ app.get('/api', (req, res: ServerResponse, next) => {
 
 app.use('/api/popular', PopularRoutes());
 app.use('/api/search', SearchRoutes);
+app.use('/api/breeds', BreedRoutes);
 
 app.use(ResponseMiddleware);
 app.use(ErrorMiddleware);
