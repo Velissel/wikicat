@@ -6,6 +6,7 @@ import PopularRoutes from './routers/popular';
 import ResponseMiddleware, {
   ServerResponse,
 } from './common/response.middleware';
+import ErrorMiddleware from './common/error.middleware';
 import SearchRoutes from './modules/search/routes';
 
 const PORT = process.env.PORT || 3001;
@@ -23,6 +24,7 @@ app.use('/api/popular', PopularRoutes());
 app.use('/api/search', SearchRoutes);
 
 app.use(ResponseMiddleware);
+app.use(ErrorMiddleware);
 
 // All other GET requests not handled before will return our React app
 app.get('*', (req, res) => {
