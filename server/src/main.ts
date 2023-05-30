@@ -4,6 +4,7 @@ import express from 'express';
 import path from 'path';
 import PopularRoutes from './routers/popular';
 import ResponseMiddleware, { ServerResponse } from './common/response.middleware';
+import SearchRoutes from './modules/search/routes';
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -17,6 +18,8 @@ app.get('/api', (req, res: ServerResponse, next) => {
 });
 
 app.use('/api/popular', PopularRoutes());
+app.use('/api/search', SearchRoutes);
+
 app.use(ResponseMiddleware);
 
 // All other GET requests not handled before will return our React app
