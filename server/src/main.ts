@@ -3,7 +3,9 @@ require('dotenv').config();
 import express from 'express';
 import path from 'path';
 import PopularRoutes from './routers/popular';
-import ResponseMiddleware, { ServerResponse } from './common/response.middleware';
+import ResponseMiddleware, {
+  ServerResponse,
+} from './common/response.middleware';
 import SearchRoutes from './modules/search/routes';
 
 const PORT = process.env.PORT || 3001;

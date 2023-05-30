@@ -1,5 +1,5 @@
 module.exports = {
-    Router: () => ({
-        get: jest.fn(),
-    })
+  Router: () => ({
+    get: jest.fn(),
+  }),
 };

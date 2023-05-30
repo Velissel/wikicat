@@ -1,5 +1,5 @@
-import { Router } from "express";
-import searchBreedsController from "./search-breeds.controller";
+import { Router } from 'express';
+import searchBreedsController from './search-breeds.controller';
 
 const SearchRoutes = Router();
 
