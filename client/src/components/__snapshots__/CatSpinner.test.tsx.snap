@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatSpinner component should render custom text if label is supplied 1`] = `
+<div>
+  <div
+    class="spinner"
+  >
+    <div
+      class="spinner-header"
+    >
+      <img
+        alt="logo"
+        class="spinner-logo"
+        src="logo.svg"
+      />
+      <p>
+        Custom
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CatSpinner component should render loading text by default 1`] = `
+<div>
+  <div
+    class="spinner"
+  >
+    <div
+      class="spinner-header"
+    >
+      <img
+        alt="logo"
+        class="spinner-logo"
+        src="logo.svg"
+      />
+      <p>
+        Loading...
+      </p>
+    </div>
+  </div>
+</div>
+`;
