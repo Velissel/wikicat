@@ -30,7 +30,7 @@ export default function CatSearchResults(props: CatSearchResultsProps) {
   }
 
   return (
-    <Row>
+    <Row data-testid="cat-search-results">
       {cats.map((cat) => {
         return (
           <Col key={cat.id} xs={12} sm={6} md={4} lg={3} className="mb-3">

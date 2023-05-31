@@ -3,7 +3,6 @@ import { render, screen } from '@testing-library/react';
 import { RouterProvider, createMemoryRouter } from 'react-router-dom';
 import Kitty from '.';
 
-jest.mock('../../data/loadCatById');
 jest.mock('../../utils/api');
 
 const TEST_DATA = {

@@ -8,7 +8,7 @@ interface KittyGalleryProps {
   images: string[];
 }
 export default function KittyGallery(props: KittyGalleryProps) {
-  const { images, ...rest } = props;
+  const { images } = props;
 
   if (isEmpty(images)) {
     return <h4>No other photos</h4>;
