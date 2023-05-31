@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should render 1`] = `
+<div>
+  <form
+    class=""
+  >
+    <label
+      class="form-label"
+      for="input"
+    >
+      input
+    </label>
+    <input
+      class="form-control"
+      id="input"
+      name="input"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
