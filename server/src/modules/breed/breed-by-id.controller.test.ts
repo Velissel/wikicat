@@ -26,8 +26,8 @@ describe('breed by id controller', () => {
   it('should attach body to response', async () => {
     const breed = { id: 'BREED_1' };
     const images = [{ id: 'IMAGE_1', url: 'EXAMPLE_1' }];
-    // @ts-ignore
     api.get
+    // @ts-ignore
       .mockResolvedValue({ data: images })
       .mockResolvedValueOnce({ data: breed });
     await breedByIdController(req, res, next);
@@ -39,8 +39,8 @@ describe('breed by id controller', () => {
     req.params.id = undefined;
     const breed = { id: 'BREED_1' };
     const images = [{ id: 'IMAGE_1', url: 'EXAMPLE_1' }];
-    // @ts-ignore
     api.get
+    // @ts-ignore
       .mockResolvedValue({ data: images })
       .mockResolvedValueOnce({ data: breed });
     await breedByIdController(req, res, next);
@@ -51,8 +51,8 @@ describe('breed by id controller', () => {
   it('should return not found error when api returns no result', async () => {
     const breed = undefined;
     const images = [{ id: 'IMAGE_1', url: 'EXAMPLE_1' }];
-    // @ts-ignore
     api.get
+    // @ts-ignore
       .mockResolvedValue({ data: images })
       .mockResolvedValueOnce({ data: breed });
     await breedByIdController(req, res, next);
