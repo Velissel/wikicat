@@ -13,7 +13,7 @@ export default function ErrorMiddleware(
   req: Request,
   res: ServerResponse,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  next: NextFunction
+  next: NextFunction,
 ): void {
   const statusCode = get(err, 'statusCode', 500);
   const message = get(err, 'message', 'Server Error');

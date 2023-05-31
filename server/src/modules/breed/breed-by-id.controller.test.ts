@@ -1,5 +1,8 @@
 import api from '../../utils/api';
-import breedByIdController, { BREED_ID_MISSING, BREED_NOT_FOUND } from './breed-by-id.controller';
+import breedByIdController, {
+  BREED_ID_MISSING,
+  BREED_NOT_FOUND,
+} from './breed-by-id.controller';
 
 jest.mock('../../utils/api');
 
@@ -21,28 +24,37 @@ describe('breed by id controller', () => {
   });
 
   it('should attach body to response', async () => {
-    const data = { id: 'BREED_1' };
+    const breed = { id: 'BREED_1' };
+    const images = [{ id: 'IMAGE_1', url: 'EXAMPLE_1' }];
     // @ts-ignore
-    api.get.mockResolvedValue({ data });
+    api.get
+      .mockResolvedValue({ data: images })
+      .mockResolvedValueOnce({ data: breed });
     await breedByIdController(req, res, next);
     expect(next).toHaveBeenCalledTimes(1);
-    expect(res.body).toEqual(data);
+    expect(res.body).toEqual({ breed, images: images.map((img) => img.url) });
   });
 
   it('should return id not supplied error when id is not supplied', async () => {
     req.params.id = undefined;
-    const data = { id: 'BREED_1' };
+    const breed = { id: 'BREED_1' };
+    const images = [{ id: 'IMAGE_1', url: 'EXAMPLE_1' }];
     // @ts-ignore
-    api.get.mockResolvedValue({ data });
+    api.get
+      .mockResolvedValue({ data: images })
+      .mockResolvedValueOnce({ data: breed });
     await breedByIdController(req, res, next);
     expect(next).toHaveBeenCalledTimes(1);
     expect(next).toHaveBeenCalledWith(BREED_ID_MISSING);
   });
 
   it('should return not found error when api returns no result', async () => {
-    const data = undefined;
+    const breed = undefined;
+    const images = [{ id: 'IMAGE_1', url: 'EXAMPLE_1' }];
     // @ts-ignore
-    api.get.mockResolvedValue({ data });
+    api.get
+      .mockResolvedValue({ data: images })
+      .mockResolvedValueOnce({ data: breed });
     await breedByIdController(req, res, next);
     expect(next).toHaveBeenCalledTimes(1);
     expect(next).toHaveBeenCalledWith(BREED_NOT_FOUND);
