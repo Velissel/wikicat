@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KittyGallery component should render images when correct data is supplied 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="col-lg-3 col-md-4 col-sm-4 col-6"
+    >
+      <img
+        class="mb-4 image img-fluid rounded"
+        data-testid="img-0"
+        src="url"
+      />
+    </div>
+    <div
+      class="col-lg-3 col-md-4 col-sm-4 col-6"
+    >
+      <img
+        class="mb-4 image img-fluid rounded"
+        data-testid="img-1"
+        src="url"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`KittyGallery component should render text when no photo is supplied 1`] = `
+<div>
+  <h4>
+    No other photos
+  </h4>
+</div>
+`;
