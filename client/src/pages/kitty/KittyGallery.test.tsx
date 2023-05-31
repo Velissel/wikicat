@@ -17,7 +17,7 @@ describe('KittyGallery component', () => {
   });
 
   it('should render images when correct data is supplied', () => {
-    const images = ['url', 'url'];
+    const images = ['url_1', 'url_2'];
     const { container } = render(
       <BrowserRouter>
         <KittyGallery images={images} />

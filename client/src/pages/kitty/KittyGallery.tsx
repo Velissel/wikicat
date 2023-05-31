@@ -8,14 +8,14 @@ interface KittyGalleryProps {
   images: string[];
 }
 export default function KittyGallery(props: KittyGalleryProps) {
-  const { images } = props;
+  const { images, ...rest } = props;
 
   if (isEmpty(images)) {
     return <h4>No other photos</h4>;
   }
 
   return (
-    <Row>
+    <Row data-testid="kitty-photos">
       {images.map((image, i) => {
         return (
           <Col xs={6} sm={4} md={4} lg={3} key={image}>

@@ -27,7 +27,7 @@ export default function KittyDetails(props: KittyDetailsProps) {
     'strangerFriendly',
   ];
   return (
-    <ListGroup as="ol">
+    <ListGroup as="ol" data-testid="kitty-details">
       <ListGroupItem>
         <div className="ms-2 me-auto">
           <div className="fw-bold">temperament</div>

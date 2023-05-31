@@ -4,6 +4,7 @@ exports[`KittyGallery component should render images when correct data is suppli
 <div>
   <div
     class="row"
+    data-testid="kitty-photos"
   >
     <div
       class="col-lg-3 col-md-4 col-sm-4 col-6"
@@ -11,7 +12,7 @@ exports[`KittyGallery component should render images when correct data is suppli
       <img
         class="mb-4 image img-fluid rounded"
         data-testid="img-0"
-        src="url"
+        src="url_1"
       />
     </div>
     <div
@@ -20,7 +21,7 @@ exports[`KittyGallery component should render images when correct data is suppli
       <img
         class="mb-4 image img-fluid rounded"
         data-testid="img-1"
-        src="url"
+        src="url_2"
       />
     </div>
   </div>

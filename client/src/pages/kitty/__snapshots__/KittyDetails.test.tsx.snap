@@ -4,6 +4,7 @@ exports[`KittyDetails component should render 1`] = `
 <div>
   <ol
     class="list-group"
+    data-testid="kitty-details"
   >
     <div
       class="list-group-item"
