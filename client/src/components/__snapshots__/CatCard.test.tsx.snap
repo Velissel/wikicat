@@ -4,6 +4,7 @@ exports[`CatCard component should render 1`] = `
 <div>
   <div
     class="card"
+    data-testid="cat-card-id"
   >
     <img
       class="card-img-top image"

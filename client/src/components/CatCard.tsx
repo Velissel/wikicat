@@ -11,7 +11,7 @@ interface CatCardProps {
 export default function CatCard(props: CatCardProps) {
   const { id, image, name, description } = props.cat;
   return (
-    <Card>
+    <Card data-testid={`cat-card-${id}`}>
       <CardImg
         variant="top"
         src={image}

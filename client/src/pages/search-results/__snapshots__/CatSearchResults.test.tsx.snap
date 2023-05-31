@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatSearchResults component should show cat list 1`] = `
+<div>
+  <div
+    class="row"
+  >
+    <div
+      class="mb-3 col-lg-3 col-md-4 col-sm-6 col-12"
+    >
+      <div
+        class="card"
+        data-testid="cat-card-id"
+      >
+        <img
+          class="card-img-top image"
+          data-testid="cat-img"
+          src="url"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            name
+          </div>
+          <p
+            class="description card-text"
+          >
+            description
+          </p>
+          <a
+            href="/kitty/id"
+          >
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              View Breed Details
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CatSearchResults component should show error 1`] = `
+<div>
+  <div
+    class="fade alert alert-danger show"
+    role="alert"
+  >
+    ERROR
+  </div>
+</div>
+`;
+
+exports[`CatSearchResults component should show loading 1`] = `
+<div>
+  <div
+    class="spinner"
+  >
+    <div
+      class="spinner-header"
+    >
+      <img
+        alt="logo"
+        class="spinner-logo"
+        src="logo.svg"
+      />
+      <p>
+        Loading...
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CatSearchResults component should show no cats message 1`] = `
+<div>
+  <div
+    class="fade alert alert-warning show"
+    role="alert"
+  >
+    Nothing is found
+  </div>
+</div>
+`;
+
+exports[`CatSearchResults component should show prmot user to start search 1`] = `
+<div>
+  Start search cat breeds by putting keyworkds in
+</div>
+`;
