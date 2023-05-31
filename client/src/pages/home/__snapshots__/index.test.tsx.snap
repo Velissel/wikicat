@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home page should render 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h1
+      class="mt-5"
+    >
+      Catwiki Home
+    </h1>
+    <form
+      action="#"
+    >
+      <div
+        class="mb-3"
+      >
+        <label
+          class="form-label"
+          for="searchTerm"
+        >
+          Search cat by breed
+        </label>
+        <div
+          class="input-group"
+        >
+          <input
+            class="form-control"
+            id="searchTerm"
+            name="searchTerm"
+            type="text"
+            value=""
+          />
+          <button
+            class="btn btn-primary"
+            type="submit"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </form>
+    <h3
+      class="mt-4"
+    >
+      Top 10 Searched Kitties
+    </h3>
+    To Be Implemented
+  </div>
+</div>
+`;
