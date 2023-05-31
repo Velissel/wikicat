@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 // @ts-ignore
-import logo from "./logo.svg";
-import "./AppError.scss";
+import logo from './logo.svg';
+import './AppError.scss';
 
 function AppError() {
   return (

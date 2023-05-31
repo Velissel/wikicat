@@ -8,5 +8,5 @@ ReactDOM.render(
   <React.StrictMode>
     <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
