@@ -11,7 +11,7 @@ describe('CatCard component', () => {
       name: 'name',
       description: 'description',
     };
-    render(
+    const { container } = render(
       <MemoryRouter>
         <CatCard cat={cat} />
       </MemoryRouter>,
@@ -22,5 +22,6 @@ describe('CatCard component', () => {
       screen.getByRole('link', { name: 'View Breed Details' }),
     ).toHaveAttribute('href', `/kitty/${cat.id}`);
     expect(screen.getByTestId('cat-img')).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 });

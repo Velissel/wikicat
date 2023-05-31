@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CatSearchInput component should redirect user to search page when input is submitted 1`] = `
+<div>
+  <form
+    action="#"
+  >
+    <div
+      class="mb-3"
+    >
+      <label
+        class="form-label"
+        for="searchTerm"
+      >
+        Search cat by breed
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control"
+          id="searchTerm"
+          name="searchTerm"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`CatSearchInput component should redirect user to search page when input is submitted 2`] = `
+<div>
+  <form
+    action="#"
+  >
+    <div
+      class="mb-3"
+    >
+      <label
+        class="form-label"
+        for="searchTerm"
+      >
+        Search cat by breed
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control"
+          id="searchTerm"
+          name="searchTerm"
+          type="text"
+          value="Turkish"
+        />
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`CatSearchInput component should render 1`] = `
+<div>
+  <form
+    action="#"
+  >
+    <div
+      class="mb-3"
+    >
+      <label
+        class="form-label"
+        for="searchTerm"
+      >
+        Search cat by breed
+      </label>
+      <div
+        class="input-group"
+      >
+        <input
+          class="form-control"
+          id="searchTerm"
+          name="searchTerm"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn btn-primary"
+          type="submit"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+`;
